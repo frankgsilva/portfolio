@@ -30,8 +30,6 @@ h4 {
 }
 
 .card-profile {
-  /* width: 396px;
-  height: 292px; */
   display: grid;
   background: var(--bg-cards);
   border-radius: 20px;
@@ -69,9 +67,22 @@ h4 {
   grid-row: 1;
 }
 
-.localization {
-  grid-column: 1;
+.card-recents {
+  background: var(--bg-cards);
+  border-radius: 20px;
+  height: 86px;
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  padding: 30px;
+  grid-column: 2 / -1;
   grid-row: 3;
+}
+#main {
+  display: grid;
+  grid-column: 1;
+  grid-row: 3 / 5;
+  gap: 0;
 }
 
 /* #projetct {
@@ -106,7 +117,7 @@ li > img {
   grid-template-columns: 1fr 3fr;
   gap: 20px;
   padding: 30px;
-  grid-template-rows: repeat(10, auto) 1fr;
+  grid-template-rows: repeat(6, auto) 1fr;
 }
 
 .cabecalho {
@@ -116,11 +127,12 @@ li > img {
 
 #card-exp {
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 6;
 }
 
 #content-image {
   grid-column: 2 / -1;
+  grid-row: 4;
 }
 
 .view {
@@ -132,7 +144,7 @@ li > img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  grid-area: 2;
+  grid-row: 2;
 }
 
 .tech {
@@ -142,7 +154,7 @@ li > img {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 20px 20px;
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 5;
 }
 
 .tech button {
